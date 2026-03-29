@@ -1,0 +1,36 @@
+[project]
+name = "ai-support-intelligence-dashboard"
+version = "0.1.0"
+description = "Free-first AI support ticket analysis dashboard built with Streamlit"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "streamlit>=1.35",
+  "litellm>=1.72",
+  "requests>=2.32",
+  "python-dotenv>=1.0",
+  "pydantic>=2.10",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = [".venv", "data", "logs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_return_any = false
+files = ["assistant", "app.py", "agent_dashboard.py", "tests"]

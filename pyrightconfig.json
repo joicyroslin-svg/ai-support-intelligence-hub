@@ -1,0 +1,18 @@
+{
+    "venvPath": ".",
+    "venv": ".venv",
+    "typeCheckingMode": "basic",
+    "reportMissingImports": "none",
+    "reportMissingModuleSource": "none",
+    "exclude": [
+        ".venv",
+        "logs",
+        "data"
+    ],
+    "include": [
+        "app.py",
+        "agent_dashboard.py",
+        "assistant",
+        "tests"
+    ]
+}
