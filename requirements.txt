@@ -5,6 +5,7 @@ python-dotenv>=1.0
 pydantic>=2.10
 numpy>=1.24
 pyarrow>=17.0
+plotly>=5.17
 
 # Dev / quality tooling
 pytest>=8.3
